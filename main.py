@@ -1,6 +1,6 @@
 from datetime import date
 
-equipment = "Палатка Trek Planet 2"
+equipment = "Палатка 123"
 category = "Палатки"
 price_per_day = 450.0
 total_count = 5
@@ -23,8 +23,6 @@ def check_availability(available, requested):
 
 def calculate_cost(price, count, days):
     cost = price * count * days
-    if days >= 7:
-        cost = cost * 0.9
     return round(cost, 2)
 
 
